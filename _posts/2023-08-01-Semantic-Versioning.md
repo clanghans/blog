@@ -1,3 +1,12 @@
+---
+categories:
+  - Software Development
+tags:
+  - software
+  - git
+  - branching
+  - semantic versioning
+---
 # Understanding Semantic Versioning and Its Importance in Git Branching Models
 
 ## Introduction
