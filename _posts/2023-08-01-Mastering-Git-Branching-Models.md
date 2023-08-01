@@ -1,3 +1,11 @@
+---
+categories:
+  - Software Development
+tags:
+  - software
+  - git
+  - branches
+---
 # Mastering Git Branching Models for a Smooth Development Workflow
 
 ## Introduction
