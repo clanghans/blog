@@ -20,7 +20,7 @@ Continuous Deployment (CD) is the subsequent step in this workflow, involving au
 GitHub Actions is an automation tool that allows you to build, test, and deploy your code right from GitHub. It provides developers with the ability to automate, customize, and execute their software development workflows in the same place they manage code.
 
 ## Examples of GitHub Actions
-1. Running Tests
+### Running Tests
 
 Running tests automatically is a common use case for GitHub Actions in CI/CD pipelines. The example below demonstrates a simple setup for running tests whenever changes are pushed to the repository.
 
@@ -43,7 +43,7 @@ jobs:
         npm test
 
 ```
-2. Building and Deploying Docker Images
+### Building and Deploying Docker Images
 
 GitHub Actions can be utilized to build Docker images and push them to a Docker registry. The example below demonstrates this process. We are building a Docker image whenever changes are pushed to the master branch, tagging the image with the Git commit SHA, and pushing the image to Docker Hub
 
