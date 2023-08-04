@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "A New Lens on Software Development and Cutting-Edge Technologies"
+title                    : "A New Lens on Software and Cutting-Edge Technologies"
 title_separator          : "-"
-subtitle                 : "Blending Human Expertise with AI" # site tagline that appears below site title in masthead
+subtitle                 : "Blended Human Expertise with AI" # site tagline that appears below site title in masthead
 name                     : "Nils Jannasch"
 description              : ""
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
