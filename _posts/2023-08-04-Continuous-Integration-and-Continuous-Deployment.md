@@ -1,3 +1,11 @@
+---
+categories:
+  - Software Development
+tags:
+  - CI/CD
+  - git
+  - github actions
+---
 # Continuous Integration and Continuous Deployment: Cornerstones of Modern Development
 
 ## Introduction
