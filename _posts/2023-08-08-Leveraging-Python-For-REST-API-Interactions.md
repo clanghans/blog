@@ -7,15 +7,15 @@ tags:
   - requests
   - REST API
 ---
-## Leveraging Python for REST API Interactions: From `argparse` to `typer`
+## Leveraging Python for REST API Interactions: From argparse to typer
 In previous blog posts, we explored essential aspects of modern development such as Continuous Integration and Continuous Deployment and Modern Software Development with a Scrum-Focused Approach. 
 
 Today, we'll dive into the practicality of Python for interacting with RESTful APIs, specifically leveraging the **requests** library.
 The integration of REST APIs is a common theme in today's interconnected world and Python, with its user-friendly ecosystem, makes it simple and effective.
 
-We'll start by demonstrating how to use `requests` with a CLI using **argparse**, then introduce **typer**, a newer library that simplifies the creation of CLI programs.
+We'll start by demonstrating how to use **requests** with a CLI using **argparse**, then introduce **typer**, a newer library that simplifies the creation of CLI programs.
 
-### Interacting with REST APIs using `requests`
+### Interacting with REST APIs using requests
 
 Here's a brief snippet that fetches users from a specific endpoint:
 
