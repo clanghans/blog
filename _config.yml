@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "A New Lens on Software and Cutting-Edge Technologies"
+title                    : "Code Chronicles"
 title_separator          : "-"
-subtitle                 : "Blended Human Expertise with AI" # site tagline that appears below site title in masthead
+subtitle                 : "Journeying through software development: From microcontrollers to modern ecosystems." # site tagline that appears below site title in masthead
 name                     : "Chris Langhans"
 description              : ""
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -106,13 +106,13 @@ analytics:
 author:
   name             : "Chris Langhans"
   avatar           : "/assets/images/comic.png"
-  bio              : "Python loving Solutions Architect"
+  bio              : "Crafted in code, honed by time."
   location         : "Germany"
   # email            : "blog@langhans.dev"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://langhans.dev"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://langhans.dev"
 
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
