@@ -1,0 +1,705 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Modern Software Development Scrum - Code Chronicles</title>
+<meta name="description" content="Modern Software Development: A Scrum-Focused Approach">
+
+
+  <meta name="author" content="Chris Langhans">
+  
+  <meta property="article:author" content="Chris Langhans">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Code Chronicles">
+<meta property="og:title" content="Modern Software Development Scrum">
+<meta property="og:url" content="http://localhost:4000/2023/08/Modern-Software-Development-Scrum/">
+
+
+  <meta property="og:description" content="Modern Software Development: A Scrum-Focused Approach">
+
+
+
+
+
+  <meta name="twitter:site" content="@clanghub">
+  <meta name="twitter:title" content="Modern Software Development Scrum">
+  <meta name="twitter:description" content="Modern Software Development: A Scrum-Focused Approach">
+  <meta name="twitter:url" content="http://localhost:4000/2023/08/Modern-Software-Development-Scrum/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2023-08-03T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/2023/08/Modern-Software-Development-Scrum/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Chris Langhans",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Code Chronicles
+          <span class="site-subtitle">Journeying through software development: From microcontrollers to modern ecosystems.</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/comic.png" alt="Chris Langhans" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Chris Langhans</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Crafted in code, honed by time.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Germany</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://twitter.com/clanghub" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/clanghans" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/chris-langhans" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Modern Software Development Scrum">
+    <meta itemprop="description" content="Modern Software Development: A Scrum-Focused Approach">
+    <meta itemprop="datePublished" content="2023-08-03T00:00:00+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/2023/08/Modern-Software-Development-Scrum/" class="u-url" itemprop="url">Modern Software Development Scrum
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h1 id="modern-software-development-a-scrum-focused-approach">Modern Software Development: A Scrum-Focused Approach</h1>
+
+<p>In an age of rapid digital evolution, software development methods have become pivotal to meeting ever-changing customer needs and market demands. The waterfall model, once a software development mainstay, has been largely supplanted by more dynamic, iterative frameworks, most notably, Scrum.</p>
+
+<p>Scrum, an agile development framework, prioritizes collaboration, self-organization, and flexibility, enabling teams to swiftly deliver value and adapt to emerging requirements. But what does Scrum entail, and how do the various roles in software development—Scrum Master, Product Owner, Development Team roles like Frontend Developer, Backend Developer, Data Engineer, Cloud Architect, UX Designer, DevOps, and more—contribute to its application? Let’s explore.</p>
+
+<h2 id="what-is-scrum">What is Scrum?</h2>
+
+<p>Scrum is an iterative and incremental framework designed to manage complex projects, primarily in software development. It divides large tasks into smaller chunks, allowing teams to focus on delivering functional software in short timeframes (usually two to four weeks), known as “Sprints.”</p>
+
+<p>Scrum’s main components are the Scrum Team (comprising the Product Owner, the Scrum Master, and the Development Team), the Product Backlog, the Sprint Backlog, and the increments or deliverables.</p>
+
+<h3 id="scrum-roles">Scrum Roles</h3>
+
+<p><strong>1. The Scrum Master</strong></p>
+
+<p>The Scrum Master’s role is to coach and guide the team in understanding and implementing the Scrum principles. They help eliminate any obstacles that might hinder the team’s progress and facilitate communication among the team members and stakeholders. The Scrum Master ensures that the Scrum process is understood, enacted, and improved continuously.</p>
+
+<p><strong>2. The Product Owner</strong></p>
+
+<p>The Product Owner (PO) is responsible for managing the Product Backlog and ensuring that the product vision aligns with the stakeholders’ expectations. The PO decides the priority of the Backlog items for each Sprint and communicates these priorities to the team.</p>
+
+<p><strong>3. The Development Team</strong></p>
+
+<p>The Development Team is a self-organizing, cross-functional group responsible for delivering increments at the end of each Sprint.
+This team includes various roles, each with a specific contribution, for example:</p>
+
+<ul>
+  <li>
+    <p><strong>Frontend Developer:</strong> This role focuses on what users interact with - the user interface. They implement design features, fix bugs, optimize applications for speed and scalability, and ensure web design is mobile-ready.</p>
+  </li>
+  <li>
+    <p><strong>Backend Developer:</strong> Backend developers work on the server-side, dealing with the application, server, and database. They create APIs, write server scripts, and handle data.</p>
+  </li>
+  <li>
+    <p><strong>Data Engineer:</strong> The data engineer’s main role is to find trends in datasets and develop algorithms to make raw data more useful to the enterprise. This could be within the context of customer trends, operational efficiency, or other business needs.</p>
+  </li>
+  <li>
+    <p><strong>Cloud Architect:</strong> A cloud architect manages an organization’s cloud computing architecture. They work on cloud application design, cloud management and monitoring, and enterprise cloud deployment strategies.</p>
+  </li>
+  <li>
+    <p><strong>UX Designer:</strong> The UX Designer is responsible for the user interface and user experience aspects of the product. They create wireframes, prototypes, and user interfaces based on the requirements gathered, ensuring that the final product provides a seamless and intuitive user experience.</p>
+  </li>
+  <li>
+    <p><strong>DevOps Engineer:</strong> The DevOps Engineer works to establish a bridge between development and operations, promoting better communication and collaboration. Their goal is to shorten the system development life cycle while continuously delivering high-quality software.</p>
+  </li>
+</ul>
+
+<h3 id="scrum-artifacts-and-events">Scrum Artifacts and Events</h3>
+
+<p>Scrum encompasses several artifacts and events that provide structure and regularity. These include:</p>
+
+<ul>
+  <li><strong>Product Backlog:</strong> This is an ordered list of everything necessary for the product, maintained and refined by the Product Owner.</li>
+  <li><strong>Sprint Backlog:</strong> A set of items chosen from the Product Backlog for the Sprint.</li>
+  <li><strong>Sprint:</strong> A time-boxed event (often 2 weeks) where specific work is completed and made ready for review.</li>
+  <li><strong>Daily Scrum:</strong> A daily 15-minute event for the Development Team to synchronize activities and align for the next 24 hours.</li>
+  <li><strong>Sprint Review:</strong> A review of the increment with stakeholders at the end of the Sprint to get feedback and update the Product Backlog.</li>
+  <li><strong>Sprint Retrospective:</strong> A meeting held at the end of each Sprint where the team reflects on the past Sprint to improve processes and performance for the future.</li>
+</ul>
+
+<h2 id="beyond-single-team-scrum-scaled-agile-and-scrum-of-scrums">Beyond Single Team Scrum: Scaled Agile and Scrum of Scrums</h2>
+
+<p>Scrum is excellent for small to mid-sized teams. But what about larger organizations where multiple teams work on the same product? Here, we need frameworks to scale Scrum practices, like the Scaled Agile Framework (SAFe) or Scrum of Scrums.</p>
+
+<p><strong>Scrum of Scrums (SoS):</strong> SoS is a technique used for scaling Scrum up to large groups. In essence, it operates as a Scrum Team of Scrum Teams. Each team designates a member to participate in the daily Scrum of Scrums meeting, discussing progress, plans, and impediments.</p>
+
+<p><strong>Scaled Agile Framework (SAFe):</strong> SAFe provides a comprehensive framework for scaling Agile practices across an enterprise. It supports alignment, collaboration, and delivery across large numbers of Agile teams and combines Agile, Lean, and DevOps principles into a single approach.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#agile" class="page__taxonomy-item p-category" rel="tag">agile</a><span class="sep">, </span>
+    
+      <a href="/tags/#project-management" class="page__taxonomy-item p-category" rel="tag">project management</a><span class="sep">, </span>
+    
+      <a href="/tags/#software" class="page__taxonomy-item p-category" rel="tag">software</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#agile-frameworks" class="page__taxonomy-item p-category" rel="tag">Agile Frameworks</a><span class="sep">, </span>
+    
+      <a href="/categories/#project-management" class="page__taxonomy-item p-category" rel="tag">Project Management</a><span class="sep">, </span>
+    
+      <a href="/categories/#software-development" class="page__taxonomy-item p-category" rel="tag">Software Development</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-08-03T00:00:00+02:00">August 3, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=clanghub&text=Modern+Software+Development+Scrum%20http%3A%2F%2Flocalhost%3A4000%2F2023%2F08%2FModern-Software-Development-Scrum%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2023%2F08%2FModern-Software-Development-Scrum%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2023%2F08%2FModern-Software-Development-Scrum%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/2023/08/Semantic-Versioning/" class="pagination--pager" title="Semantic Versioning
+">Previous</a>
+    
+    
+      <a href="/2023/08/Continuous-Integration-and-Continuous-Deployment/" class="pagination--pager" title="Continuous Integration And Continuous Deployment
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2023/11/unlocking-career-potential/" rel="permalink">Unlocking Career Potential
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Unlocking Your Career Potential: The Evolution of CVs and the Power of LaTeX
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2023/08/Leveraging-Python-For-REST-API-Interactions/" rel="permalink">Leveraging Python For Rest Api Interactions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Leveraging Python for REST API Interactions: From argparse to typer
+In previous blog posts, we explored essential aspects of modern development such as Conti...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2023/08/Continuous-Integration-and-Continuous-Deployment/" rel="permalink">Continuous Integration And Continuous Deployment
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Continuous Integration and Continuous Deployment: Cornerstones of Modern Development
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2023/08/Semantic-Versioning/" rel="permalink">Semantic Versioning
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Everything starts with a good resume
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/clanghub" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/clanghans" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/chris-langhans" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Chris Langhans. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
