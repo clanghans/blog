@@ -4,7 +4,7 @@
 
 Posts, images and custom code is licensed under CC BY-NC-ND 4.0.
 clanghans personal blog © 2023 by Chris Langhans is licensed under CC BY-NC-ND 4.0
-Details see [LICENSE](LICENSE_CONTENT.md).
+Details see [LICENSE](LICENSE_CC.md).
 
 ## Disclaimer
 
