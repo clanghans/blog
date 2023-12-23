@@ -1,0 +1,682 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Semantic Versioning - Code Chronicles</title>
+<meta name="description" content="Everything starts with a good resume">
+
+
+  <meta name="author" content="Chris Langhans">
+  
+  <meta property="article:author" content="Chris Langhans">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Code Chronicles">
+<meta property="og:title" content="Semantic Versioning">
+<meta property="og:url" content="http://localhost:4000/2023/08/Semantic-Versioning/">
+
+
+  <meta property="og:description" content="Everything starts with a good resume">
+
+
+
+
+
+  <meta name="twitter:site" content="@clanghub">
+  <meta name="twitter:title" content="Semantic Versioning">
+  <meta name="twitter:description" content="Everything starts with a good resume">
+  <meta name="twitter:url" content="http://localhost:4000/2023/08/Semantic-Versioning/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2023-08-01T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/2023/08/Semantic-Versioning/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Chris Langhans",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Code Chronicles
+          <span class="site-subtitle">Journeying through software development: From microcontrollers to modern ecosystems.</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/comic.png" alt="Chris Langhans" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Chris Langhans</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Crafted in code, honed by time.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Germany</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://twitter.com/clanghub" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/clanghans" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/chris-langhans" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Semantic Versioning">
+    <meta itemprop="description" content="Everything starts with a good resume">
+    <meta itemprop="datePublished" content="2023-08-01T00:00:00+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/2023/08/Semantic-Versioning/" class="u-url" itemprop="url">Semantic Versioning
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h1 id="everything-starts-with-a-good-resume">Everything starts with a good resume</h1>
+
+<h1 id="understanding-semantic-versioning-and-its-importance-in-git-branching-models">Understanding Semantic Versioning and Its Importance in Git Branching Models</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In our previous post, we discussed Git branching models and touched on how tags are used to mark specific points in a repository’s history, often to denote version releases. This time, we’re diving deeper into the concept of versioning - specifically, Semantic Versioning - and how it fits into the Git branching model.</p>
+
+<h2 id="what-is-semantic-versioning">What is Semantic Versioning?</h2>
+
+<p>Semantic Versioning, or SemVer, is a versioning scheme for software that aims to convey meaning about the underlying changes in a release. It provides a universal standard of structuring version numbers.</p>
+
+<p>A SemVer-compatible version number is composed of three parts: <code class="language-plaintext highlighter-rouge">MAJOR.MINOR.PATCH</code>.</p>
+
+<ul>
+  <li>
+    <p><strong>MAJOR</strong>: This number is incremented when you make incompatible API changes. This indicates that the new version might break the existing code that uses this API, and manual intervention might be needed to update the code.</p>
+  </li>
+  <li>
+    <p><strong>MINOR</strong>: This number is incremented when you add functionality in a backward-compatible manner. The users of your API can benefit from the new features without making any changes to their existing code.</p>
+  </li>
+  <li>
+    <p><strong>PATCH</strong>: This number is incremented when you make backward-compatible bug fixes. This is generally safe to update without worrying about breaking anything.</p>
+  </li>
+</ul>
+
+<p>Additional labels for pre-release and build metadata are also available as extensions to the MAJOR.MINOR.PATCH format, like 1.0.0-alpha or 1.0.0+20130313144700.</p>
+
+<p>One of the essential principles of Semantic Versioning is that a version, once released, should be <strong>immutable</strong>. This means that no changes should be made to the version after it has been released. If you need to make changes, then it’s important to release a new version.
+This principle guarantees that every version is a consistent and reliable snapshot of the software at a specific point in time.</p>
+<h2 id="why-is-semantic-versioning-important">Why is Semantic Versioning Important?</h2>
+
+<p>Semantic Versioning gives users of your software more insight into what is happening with each new release. It allows them to understand the potential impact of updating to a new version and plan accordingly.</p>
+
+<p>Semantic versioning is particularly useful in a collaborative coding environment as it helps to communicate the risk and the size of changes between different versions of a software or a library.</p>
+
+<h2 id="semantic-versioning-in-the-context-of-git-branching-models">Semantic Versioning in the Context of Git Branching Models</h2>
+
+<p>Semantic Versioning and Git branching models are closely related. As discussed in our previous post, the Git branching model enables parallel lines of development and helps streamline the software release process. When integrated with Semantic Versioning, it makes the process more informative and efficient.</p>
+
+<p>When a new feature, bug fix, or breaking change is introduced into the codebase, it typically goes through the <code class="language-plaintext highlighter-rouge">development</code> -&gt; <code class="language-plaintext highlighter-rouge">staging</code> -&gt; <code class="language-plaintext highlighter-rouge">master</code> workflow. At the point when changes are merged into the <code class="language-plaintext highlighter-rouge">master</code> branch and are ready to be released, a new tag is created.</p>
+
+<p>This tag is where Semantic Versioning comes into play. By adhering to the MAJOR.MINOR.PATCH format, the tag conveys important information about what the release encompasses. If the code changes include a new feature that doesn’t break any existing functionality, for instance, the MINOR version would be incremented. If a bug was fixed, the PATCH version would be incremented. And if there were changes that broke backward compatibility, the MAJOR version would be incremented.</p>
+
+<p>For example, if the current version of the application is at 2.3.4 and a new backward-compatible feature is added and ready to be released, the new tag would be 2.4.0.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Understanding Semantic Versioning is essential for managing software versions effectively. It not only provides a standard way of versioning but also communicates the nature of updates to the users. When combined with Git branching models, Semantic Versioning enhances the software development and release process, making it more robust, predictable, and efficient. Remember, effective version management can be as crucial as the code itself in a software project’s success.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#latex" class="page__taxonomy-item p-category" rel="tag">latex</a><span class="sep">, </span>
+    
+      <a href="/tags/#linux" class="page__taxonomy-item p-category" rel="tag">linux</a><span class="sep">, </span>
+    
+      <a href="/tags/#software" class="page__taxonomy-item p-category" rel="tag">software</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#career" class="page__taxonomy-item p-category" rel="tag">career</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-08-01T00:00:00+02:00">August 1, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=clanghub&text=Semantic+Versioning%20http%3A%2F%2Flocalhost%3A4000%2F2023%2F08%2FSemantic-Versioning%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2023%2F08%2FSemantic-Versioning%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2023%2F08%2FSemantic-Versioning%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/2023/08/Mastering-Git-Branching-Models/" class="pagination--pager" title="Mastering Git Branching Models
+">Previous</a>
+    
+    
+      <a href="/2023/08/Modern-Software-Development-Scrum/" class="pagination--pager" title="Modern Software Development Scrum
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2023/11/unlocking-career-potential/" rel="permalink">Unlocking Career Potential
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Unlocking Your Career Potential: The Evolution of CVs and the Power of LaTeX
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2023/08/Leveraging-Python-For-REST-API-Interactions/" rel="permalink">Leveraging Python For Rest Api Interactions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Leveraging Python for REST API Interactions: From argparse to typer
+In previous blog posts, we explored essential aspects of modern development such as Conti...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2023/08/Continuous-Integration-and-Continuous-Deployment/" rel="permalink">Continuous Integration And Continuous Deployment
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Continuous Integration and Continuous Deployment: Cornerstones of Modern Development
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2023/08/Modern-Software-Development-Scrum/" rel="permalink">Modern Software Development Scrum
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Modern Software Development: A Scrum-Focused Approach
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/clanghub" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/clanghans" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/chris-langhans" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Chris Langhans. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
